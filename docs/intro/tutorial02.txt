@@ -494,8 +494,8 @@ Save these changes and start a new Python interactive shell by running
     # Traceback (most recent call last):
     #     ...
     # DoesNotExist: Question matching query does not exist.
-    <QuerySet []>
     # After adding the def __str__(self) function, do not show error message
+    <QuerySet []>
 
     # Lookup by a primary key is the most common case, so Django provides a
     # shortcut for primary-key exact lookups.
