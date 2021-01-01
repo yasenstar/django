@@ -491,9 +491,11 @@ Save these changes and start a new Python interactive shell by running
 
     # Request an ID that doesn't exist, this will raise an exception.
     >>> Question.objects.get(id=2)
-    Traceback (most recent call last):
-        ...
-    DoesNotExist: Question matching query does not exist.
+    # Traceback (most recent call last):
+    #     ...
+    # DoesNotExist: Question matching query does not exist.
+    <QuerySet []>
+    # After adding the def __str__(self) function, do not show error message
 
     # Lookup by a primary key is the most common case, so Django provides a
     # shortcut for primary-key exact lookups.
